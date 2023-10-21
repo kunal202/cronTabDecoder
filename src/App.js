@@ -107,47 +107,41 @@ function App() {
   return (
     <div className="App">
       <div className="relative flex flex-col justify-center items-center min-h-screen space-y-4">
+        <h1 className="text-2xl font-bold text-blue-500 text-center shadow-md px-5 py-2.5 rounded-full transform hover:scale-105 hover:shadow-lg transition-all duration-300">
+            Cron tab Decoder
+        </h1>
         <div className="relative w-full max-w-lg">
           <input
             type="text"
             id="floating_helper1"
             aria-describedby="floating_helper_text1"
-            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer transition-border duration-300"
             placeholder=" "
             onChange={(e) => result(e.target.value)}
           />
           <label
             htmlFor="floating_helper1"
-            className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+            className="absolute text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-4 left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 transition-transform transition-scale duration-300"
           >
             Cron Pattern
           </label>
         </div>
-
         <div className="relative w-full max-w-lg">
           <input
             type="text"
             id="floating_helper2"
             aria-describedby="floating_helper_text2"
-            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" "
+            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer transition-border duration-300 whitespace-normal break-words"
+            placeholder="Cron Pattern Meaning"
             value={cronMeaning}
             readOnly
-            style={{
-              whiteSpace: "normal",
-              overflowWrap: "break-word",
-            }}
+            disabled="true"
           />
-          <label
-            htmlFor="floating_helper2"
-            className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
-          >
-            Cron Pattern Meaning
-          </label>
         </div>
       </div>
     </div>
-  );
+);
+
 }
 
 export default App;
