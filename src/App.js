@@ -57,7 +57,7 @@ function App() {
   function interpretCron(value) {
     const parts = value.split(" ");
     if (parts.length !== 5 || parts[4] === "") {
-      return parts.length === 1 ? "" : "Invalid Pattern";
+      return value ? "Invalid Pattern":"";
     }
 
     const daysOfWeek = [
@@ -135,7 +135,7 @@ function App() {
             placeholder="Cron Pattern Meaning"
             value={cronMeaning}
             readOnly
-            disabled="true"
+            disabled={true}
           />
         </div>
       </div>
