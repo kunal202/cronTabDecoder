@@ -56,8 +56,8 @@ function App() {
 
   function interpretCron(value) {
     const parts = value.split(" ");
-    if (parts.length !== 5 || parts[4]==="") {
-      return "Invalid Pattern";
+    if (parts.length !== 5 || parts[4] === "") {
+      return parts.length === 1 ? "" : "Invalid Pattern";
     }
 
     const daysOfWeek = [
@@ -108,7 +108,7 @@ function App() {
     <div className="App">
       <div className="relative flex flex-col justify-center items-center min-h-screen space-y-4">
         <h1 className="text-2xl font-bold text-blue-500 text-center shadow-md px-5 py-2.5 rounded-full transform hover:scale-105 hover:shadow-lg transition-all duration-300">
-            Cron tab Decoder
+          Cron tab Decoder
         </h1>
         <div className="relative w-full max-w-lg">
           <input
@@ -140,8 +140,7 @@ function App() {
         </div>
       </div>
     </div>
-);
-
+  );
 }
 
 export default App;
