@@ -157,23 +157,29 @@ function App() {
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="p-4 text-left text-sm"> ,</td>
-                <td className="p-4 text-right text-sm">Multiple values</td>
+                <td className="p-4 text-right text-sm">
+                  Multiple values (i.e. 0,15,25)
+                </td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="p-4 text-left text-sm"> -</td>
-                <td className="p-4 text-right text-sm">Range</td>
+                <td className="p-4 text-right text-sm">
+                  Range (i.e. 1-5, 6-9)
+                </td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="p-4 text-left text-sm"> /</td>
-                <td className="p-4 text-right text-sm">Steps</td>
+                <td className="p-4 text-right text-sm">Steps (i.e. 1/10)</td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="p-4 text-left text-sm"> L</td>
-                <td className="p-4 text-right text-sm">Last</td>
+                <td className="p-4 text-right text-sm">Last (i.e. 5L, L)</td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="p-4 text-left text-sm"> W</td>
-                <td className="p-4 text-right text-sm">Nearest weekday</td>
+                <td className="p-4 text-right text-sm">
+                  Nearest weekday (i.e. 5W, 10W)
+                </td>
               </tr>
             </tbody>
           </table>
