@@ -57,7 +57,7 @@ function App() {
   function interpretCron(value) {
     const parts = value.split(" ");
     if (parts.length !== 5 || parts[4] === "") {
-      return value ? "Invalid Pattern":"";
+      return value ? "Invalid Pattern" : "";
     }
 
     const daysOfWeek = [
@@ -115,13 +115,13 @@ function App() {
             type="text"
             id="floating_helper1"
             aria-describedby="floating_helper_text1"
-            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer transition-border duration-300"
+            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-300 dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer transition duration-300"
             placeholder=" "
             onChange={(e) => result(e.target.value)}
           />
           <label
             htmlFor="floating_helper1"
-            className="absolute text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-4 left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 transition-transform transition-scale duration-300"
+            className="absolute text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-4 left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 transition-all duration-300"
           >
             Cron Pattern
           </label>
@@ -131,10 +131,9 @@ function App() {
             type="text"
             id="floating_helper2"
             aria-describedby="floating_helper_text2"
-            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer transition-border duration-300 whitespace-normal break-words"
+            className="block w-full rounded-t-lg px-2.5 pb-2.5 pt-5 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-b-2 border-gray-300 dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer transition duration-300 whitespace-normal break-words"
             placeholder="Cron Pattern Meaning"
             value={cronMeaning}
-            readOnly
             disabled={true}
           />
         </div>
