@@ -105,9 +105,9 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App dynamic-bg">
       <div className="relative flex flex-col justify-center items-center min-h-screen space-y-4">
-        <h1 className="text-2xl font-bold text-blue-500 text-center shadow-md px-5 py-2.5 rounded-full transform hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <h1 className="text-2xl font-bold text-mintcream text-center shadow-md px-5 py-2.5 rounded-full transform hover:scale-105 hover:shadow-lg transition-all duration-300">
           Cron tab Decoder
         </h1>
         <h6 className="text-xs text-center">
