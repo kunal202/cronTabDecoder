@@ -111,7 +111,8 @@ function App() {
           Cron tab Decoder
         </h1>
         <h6 className="text-xs text-center">
-          Note: Ensure to separate each field with a space.
+          Note: Ensure to separate each field with a space. For Days and Months
+          Valid Enums are full Names. Eg(Sunday,January)
         </h6>
         <div className="relative w-full max-w-lg">
           <input
