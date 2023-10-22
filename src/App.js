@@ -140,6 +140,44 @@ function App() {
             disabled={true}
           />
         </div>
+        <div className="w-full max-w-2xl mt-10">
+          <table className="min-w-full border-collapse rounded-lg shadow-md">
+            <thead>
+              <tr className="border-b border-gray-300">
+                <th className="p-4 text-left text-sm font-semibold">Symbol</th>
+                <th className="p-4 text-right text-sm font-semibold">
+                  Meaning
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-300">
+                <td className="p-4 text-left text-sm"> *</td>
+                <td className="p-4 text-right text-sm">Every unit</td>
+              </tr>
+              <tr className="border-b border-gray-300">
+                <td className="p-4 text-left text-sm"> ,</td>
+                <td className="p-4 text-right text-sm">Multiple values</td>
+              </tr>
+              <tr className="border-b border-gray-300">
+                <td className="p-4 text-left text-sm"> -</td>
+                <td className="p-4 text-right text-sm">Range</td>
+              </tr>
+              <tr className="border-b border-gray-300">
+                <td className="p-4 text-left text-sm"> /</td>
+                <td className="p-4 text-right text-sm">Steps</td>
+              </tr>
+              <tr className="border-b border-gray-300">
+                <td className="p-4 text-left text-sm"> L</td>
+                <td className="p-4 text-right text-sm">Last</td>
+              </tr>
+              <tr className="border-b border-gray-300">
+                <td className="p-4 text-left text-sm"> W</td>
+                <td className="p-4 text-right text-sm">Nearest weekday</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
